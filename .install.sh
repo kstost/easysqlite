@@ -2,6 +2,7 @@
 
 if [ "$#" -eq 1 ]; then
 	if [ -d $1 ]; then
+		cp .exclude.json $1
 	        cp .compare_current.sh $1
 	        cp .find.sh $1
 	        cp .install.sh $1

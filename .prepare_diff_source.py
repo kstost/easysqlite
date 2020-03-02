@@ -153,7 +153,7 @@ def getGithubCredential():
 	else:
 		return ''
 def getExclude():
-	path = './exclude.json'
+	path = './.exclude.json'
 	if is_file(path):
 		return json.loads(shell_exec('cat "'+path+'"').strip())
 	else:
